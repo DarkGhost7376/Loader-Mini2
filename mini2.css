@@ -1,0 +1,48 @@
+body{
+    background-color: #0e1e58;
+    padding: 0;
+    margin: 0;
+}
+div{
+    height: 80px;
+    width: 80px;
+    background-color: #FF006F;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 -7px #FF006A,
+                0 0 0 -7px #FFBA00,
+                0 0 0 -15px #CB00FF,
+                0 0 0 -15px #04D2FF;
+    animation: split 2.4s forwards infinite;
+}
+@keyframes split{
+    25%{
+        box-shadow: 90px 0 0 -7px #FF006A,
+        -90px 0 0 -7px #FF006A,
+        90px 0 0 -15px #FF006A,
+        -90px 0 0 -15px #FF006A;
+    }
+    50%{
+        box-shadow: 90px 0 0 -7px #FFBA00,
+        -90px 0 0 -7px #FFBA00,
+        180px 0 0 -15px #FFBA00,
+        -180px 0 0 -15px #FFBA00;
+    }
+    75%{
+        box-shadow: 90px 0 0 -7px #CB00FF,
+        -90px 0 0 -7px #CB00FF,
+        90px 0 0 -15px #CB00FF,
+        -90px 0 0 -15px #CB00FF;
+    }
+    100%{
+        box-shadow: 0 0 0 -7px #04D2FF,
+        0 0 0 -7px #04D2FF,
+        0 0 0 -15px #04D2FF,
+        0 0 0 -15px #04D2FF;
+    }
+}
